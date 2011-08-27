@@ -1,0 +1,41 @@
+{{extend 'layout.html'}}
+
+<!--{{if 'message' in globals():}}{{=H2(message)}}{{else:}}{{=BEAUTIFY(response._vars)}}{{pass}}-->
+
+<section class="promo"> 
+  <article> 
+    <div class="photo-right"> 
+      <a href="http://www.healthscapes.org" target="_blank"><img src="/{{=request.application}}/static/images/hs_sm.png"
+           alt="healthscapes screenshot" title="healthscapes.org" height="200px" width="185px" /> </a>
+    </div>
+
+    <h2>Healtscapes.org - open web suite</h2>
+    <p>
+      Healthscapes is a suite of web tools for finding, analyzing, and
+      sharing global environmental health information. Our goal is to
+      initiate a community-driven open source project to faciliate research on the
+      environmental determinants of global health. Our research
+      is being applied to infectious disease outbreaks
+      and health monitoring during natural disasters. For more information, please visit <a href="http://www.healthscapes.org">healthscapes.org</a>
+      </p>
+      <br />
+  </article>
+
+  <article>
+    <div class="photo-left"> 
+     <a href="https://launchpad.net/savagelib" target="_blank"><img src="/{{=request.application}}/static/images/svglib_sm.png"
+           alt="graph screenshot" title="SaVaGelib" height="120px" width="200px" /></a>
+    </div>
+
+
+    <h2>SaVaGelib - SVG graphing library</h2>
+    <p>My lab group (led by Zack Krejci) is developing an open
+      source SVG graphing library. While most of our graphing needs
+      can be met by Matplotlib and R, we decided to roll our own
+      library for the standard graphs in Healthscapes. We pulled this
+      sub-project from the main project to facilitate it's use by
+      other developers. For access to the code, please
+      visit <a href="http://www.launchpad.net/savagelib" target="_blank">Launchpad</a> </p>
+
+</article>
+</section>

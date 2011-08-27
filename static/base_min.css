@@ -1,0 +1,47 @@
+
+/*********** reset common tags ***********/
+html,div,h1,h2,h3,h4,h5,h6p,ul,li,table,thead,tbody,tfoot,th,tr,td {
+    border: 0; margin: 0; outline: 0; padding: 0;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit; 
+    line-height: 1.2em;
+    text-align: left; vertical-align: top; 
+}
+
+
+/*********** web2py specific ***********/
+div.flash {
+    position: fixed;
+    float: right;
+    padding: 10px;
+    top: 0px;
+    right: 0px;
+    opacity: 0.75;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    clear: both;
+    color: #fff;
+    font-size: 11pt;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: black;
+    border: 2px solid #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    z-index: 2;
+}
+
+div.error {
+/*   -moz-border-radius: 5px;     */
+/*    -webkit-border-radius: 5px; */
+/*    border: 1px solid #666;     */
+    background-color: red;
+    color: white;
+    padding: 3px;
+
+}
+
+

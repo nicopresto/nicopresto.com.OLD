@@ -1,0 +1,402 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Modified by the Hacker Within programming group
+*/
+
+/* html5 */
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+   display:block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #191E1A;
+/*    background: #000000;*/
+    font-family: Prestige, arial, sans-serif;
+    font-size: 14px;
+/*    color: #FCFFFD;*/
+    color: #FFFFFF;
+    
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: #6E6C00;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+ul {
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover {
+    border-bottom: none;
+}
+
+a img {
+    border: none;
+}
+
+img.left {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+img.right {
+    float: right;
+    margin: 0 0 0 20px;
+}
+
+/* Header */
+
+/* html5: changed from id to element */
+header {
+    width: 100%;
+    height: 210px;
+}
+
+#logo {
+    width: 1000px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#logo h1, #logo p {
+    float: left;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+#logo h1 {
+    padding: 80px 0 0 0;
+    text-transform: lowercase;
+    font-weight: normal;
+    font-size: 3em;
+}
+
+#logo p {
+    text-transform: uppercase;
+    padding: 102px 0 0 3px;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+#logo a {
+    border: none;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Menu */
+
+#menu-bg {
+    background: #1E3227;
+    height: 45px;
+}
+
+#menu {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu a {
+    display: block;
+    float: left;
+    margin: 0 3px 0 0;
+    padding: 12px 15px 10px 15px;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #DDBB04;
+}
+
+#menu a:hover {
+    margin: 0 3px 0 0;
+    background: #191E1A;
+    border-bottom: 3px solid #DDBB04;
+    color: #FFFFFF;
+}
+
+#menu .current_page_item a {
+    background: none;
+    margin: 0 3px 0 0;
+    background: #191E1A;
+    border-bottom: 3px solid #DDBB04;
+    color: #FFFFFF;
+}
+
+/* Wrapper */
+
+#wrapper {
+}
+
+/* Page */
+
+#page {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+#page-bg {
+    padding: 11px 24px;
+}
+
+/* Latest Post */
+
+#latest-post {
+    border: 1px dashed #8D8D8D;
+}
+
+/* Content */
+
+#content {
+    float: left;
+    width: 498px;
+    padding-right: 20px;
+}
+
+.post {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    line-height: 200%;
+}
+
+.post h1 {
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.post h2 {
+    font-size: 24px;
+}
+
+.title {
+    margin: 0;
+    padding: 15px 0px 0px 0px;
+    font-weight: normal;
+}
+
+.title a {
+    border-bottom: none;
+}
+
+.title a:hover {
+    color: #FBD900;
+}
+
+.byline {
+    margin: 0 0px 20px 0px;
+    text-transform: uppercase;
+}
+
+.entry {
+    padding: 0px 0px;
+}
+
+.links {
+    font-size: 11px;
+}
+
+.links a {
+    display: block;
+    border: none;
+    color: #FFFFFF;
+}
+
+.links a:hover {
+}
+
+.links .more {
+    float: right;
+    text-transform: uppercase;
+}
+
+.links .comments {
+    float: left;
+    padding-left: 20px;
+}
+/* Sidebars */
+
+#sidebar1 {
+    padding-right: 20px;
+}
+
+.sidebar {
+    float: left;
+    width: 200px;
+    padding: 0 0 0 21px;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 0 0 20px 0;
+}
+
+.sidebar li ul {
+    padding: 0px 15px;
+}
+
+.sidebar li li {
+    padding: 8px 0 8px 0px;
+    background: url(images/img01.jpg) repeat-x left bottom;
+}
+
+.sidebar li li a:hover {
+    color: #FBD900;
+}
+
+.sidebar li h2 {
+    margin: 0 0 10px 0;
+    padding: 10px 15px 10px 15px;
+    background: #1E3227;
+    font-size: 16px;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.sidebar p {
+    padding: 0px 15px;
+}
+
+.sidebar a {
+    color: #FBD900;
+}
+
+/* Search */
+
+#searchform {
+    margin: 0;
+    padding: 20px 15px;
+}
+
+#searchform br {
+    display: none;
+}
+
+#s {
+    margin: 0;
+    padding: 2px 2px;
+    width: 165px;
+    height: 18px;
+    border: none;
+    background: #FFFFFF;
+    font-size: 10px;
+    color: #000000;
+}
+
+#x {
+    margin: 1px 0 0 0;
+    padding: 2px 5px;
+    height: 24px;
+    border: none;
+    background: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+/* Calendar */
+
+#calendar_wrap {
+    padding: 0;
+    text-align: center;
+}
+
+#calendar_wrap table {
+    width: 100%;
+}
+
+#calendar_wrap th {
+}
+
+#calendar_wrap td {
+}
+
+#calendar_wrap tfoot td {
+    border: none;
+}
+
+#calendar_wrap tfoot td#prev {
+    text-align: left;
+    font-weight: bold;
+    border: none;
+}
+
+#calendar_wrap tfoot td#prev a {
+    border: none;
+}
+
+#calendar_wrap tfoot td#next {
+    text-align: right;
+    font-weight: bold;
+    border: none;
+}
+
+#calendar_wrap tfoot td#next a {
+    border: none;
+}
+
+/* Footer */
+
+#footer {
+    background-color: #0D170F;
+    height: 50px;
+}
+
+#footer-content {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+#footer p {
+    margin: 0;
+    padding: 20px 0 0 0;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #FBD900;
+}
+
+#footer a {
+    color: #FBD900;
+}

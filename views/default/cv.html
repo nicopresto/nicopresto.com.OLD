@@ -1,0 +1,169 @@
+{{extend 'layout.html'}}
+
+<!--{{if 'message' in globals():}}{{=H2(message)}}{{else:}}{{=BEAUTIFY(response._vars)}}{{pass}}-->
+
+<section class="promo"> 
+<article>
+<p style="text-align:right">  
+<a href="{{=URL(a=request.application,c='static',f='docs/preston_2011.pdf')}}">Download as PDF</a>
+</p>
+</article>
+
+
+  <article>
+    <h2>Research Goals</h2> 
+    <p>
+      {{for goal in goals:}}
+      {{=goal.statement}}
+      {{pass}}
+    </p>
+  </article>
+
+  <article>
+    <h2 id="current"
+        onclick="collapse('current_inner');">{{=T("Current Position")}}</h2>
+    <div id="current_inner" class="coll" style="display:none;">
+      <p class="hangingindent">
+        {{for curr in current:}}
+        {{=curr.title}}: {{=curr.institute}}<br/>
+        {{=curr.department}}, {{=curr.country}}<br/>
+        {{=curr.project}} Project: {{=curr.description}}
+        {{pass}} 
+      </p>
+    </div>
+  </article>
+
+
+  <article>
+    <h2 id="education" onclick="collapse('education_inner');">{{=T("Education")}}</h2>
+    <div id="education_inner" class="coll" style="display:none;">
+      {{for ed in education:}}
+      <p class="hangingindent">
+        {{=ed.degree}} ({{=ed.year}}) &nbsp;&bull;&nbsp;
+        {{=ed.institute}}
+        ({{=ed.country}}) <br/>
+        {{=ed.comments}}
+      </p>
+      {{pass}}
+    </div>
+  </article>
+
+  <article>
+    <h2 id="publications" onclick="collapse('publications_inner');">{{=T("Publications")}}</h2>
+    <div id="publications_inner" class="coll" style="display:none;">
+      {{for pub in pubs:}}
+      <p class="hangingindent">
+        {{=pub.authors}}. {{=pub.year}}. {{=pub.title}}. {{=pub.journal}}&nbsp;{{=pub.volume}}:&nbsp;{{=pub.page_st}}-{{=pub.page_end}}.<br />
+      </p>
+      {{pass}}
+    </div>
+  </article>
+
+  <article>
+    <h2 id="presentations" onclick="collapse('presentations_inner');">{{=T("Presentations")}}</h2>
+    <div id="presentations_inner" class="coll" style="display:none;">
+      {{for pres in presentations:}}
+      <p class="hangingindent">
+        {{=pres.authors}}. {{=pres.year}}. {{=pres.title}}. {{=pres.host}}&nbsp;({{=pres.acronym}}),
+        {{=pres.city}}, {{=pres.state}} ({{=pres.country}}).<br />
+      </p>
+      {{pass}}
+    </div>
+  </article>
+
+  <article>
+    <h2 id="research" onclick="collapse('research_inner');"> {{=T("Research Experience")}}</h2>
+    <div id="research_inner" class="coll" style="display:none;">
+      {{for wk in work:}}
+      <p>
+        <span style="font-variant: small-caps; font-size:120%;">{{=wk.title}}
+          {{=wk.institute}}&#151;{{=wk.year_st}}-{{=wk.year_end}}</span><br/>
+        Mentoring: {{=wk.advisor}}<br/>
+        {{=wk.description}}
+
+      </p>
+      {{pass}}
+    </div>
+  </article>
+
+  <article>
+    <h2 id="funding" onclick="collapse('funding_inner');">{{=T("Funding")}}</h2>
+    <div id="funding_inner" class="coll" style="display:none;">
+      <p>
+        {{for fund in funding:}}
+        {{=fund.title}}: {{=fund.year}}<br/>
+        {{pass}}
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <h2 id="teaching"
+        onclick="collapse('teaching_inner');">{{=T("Recent Teaching")}}</h2>
+    <div id="teaching_inner" class="coll" style="display:none;">
+      <p>
+        {{for taught in teaching:}}
+        {{=taught.course}}: {{=taught.title}} ({{=taught.description}})<br />
+        {{pass}}
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <h2 id="societies" onclick="collapse('societies_inner');">{{=T("Societies")}}</h2>
+    <div id="societies_inner" class="coll" style="display:none;">
+      <p>
+        {{for org in societies:}}
+        {{=org.name}} ({{=org.acronym}})<br />
+        {{pass}}
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <h2 id="referee" onclick="collapse('referee_inner');">{{=T("Journal Review Experience")}}</h2>
+    <div id="referee_inner" class="coll" style="display:none;">
+      <p>
+        {{for ref in referee:}}
+        {{=ref.journal}}<br />
+        {{pass}}
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <h2 id="volunteer"
+        onclick="collapse('volunteer_inner');">{{=T("Volunteer Work")}}</h2>
+    <div id="volunteer_inner" class="coll" style="display:none;">
+      <p>
+        {{for vol in volunteer:}}
+        {{=vol.organization}}: {{=vol.description}}&#151;{{=vol.year_st}}-{{=vol.year_end}}<br />
+        {{pass}}
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <h2 id="skills" onclick="collapse('skills_inner');">{{=T("Skills")}}</h2>
+    <div id="skills_inner" class="coll" style="display:none;">
+      <p>
+        {{for skill in skills:}}
+        {{=skill.title}}: {{=skill.description}}<br />
+        {{pass}}
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <h2 id="contacts"
+        onclick="collapse('contacts_inner');">{{=T("Contact Info")}}</h2>
+    <div id="contacts_inner" class="coll" style="display:none;">
+      <p>
+        {{for contact in contacts:}}
+        {{=contact.type}}: {{=contact.handle}}<br />
+        {{pass}}
+      </p>
+    </div>
+  </article>
+
+</section>

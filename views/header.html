@@ -1,0 +1,16 @@
+      <div id="logo" onclick="javascript:window.location.href='/{{=request.application}}'" style="cursor:pointer"> 
+
+        <h1>{{=response.title or 'response.title'}}</h1> 
+        <div id="kicker">{{=response.subtitle or 'response.subtitle'}}</div> 
+      </div>  
+      <!-- end div#logo -->
+      <div id="menu">
+        <ul>
+          <li id="index"><a href="/{{=request.application}}">Homepage</a></li>
+          <li id="about"><a href="/{{=request.application}}/default/about.html">About</a></li>
+          <li id="projects"><a href="/{{=request.application}}/default/projects.html">Projects</a></li>
+          <li id="cv"><a href="/{{=request.application}}/default/cv.html">CV</a></li>
+          <script>$("#{{=request.function}}").addClass("active");</script>
+        </ul>
+      </div>
+      <!-- end div#menu -->

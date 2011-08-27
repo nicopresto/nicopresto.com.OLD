@@ -1,0 +1,39 @@
+<title>{{=response.title or request.application}}</title>
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--> 
+<link rel="shortcut icon"
+      href="{{=URL(request.application,'static','favicon.ico')}}" 
+      type="image/vnd.microsoft.icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+{{#------  require CSS and JS files for this page (read info in base.css) ------}}
+{{response.files.append(URL(request.application,'static','base_min.css'))}}
+{{response.files.append(URL(request.application,'static','default.css'))}}
+{{response.files.append(URL(request.application,'static','thirsty.css'))}}
+<!--<link href="/{{=request.application}}/static/gallery.css" rel="stylesheet" type="text/css" />-->
+
+{{#----Scripts----}}
+{{response.files.append(URL(request.application,'static','superfish.js'))}}
+{{#------ include web2py specific js code (jquery, calendar, form stuff) ------}}
+{{include 'web2py_ajax.html'}}
+<script type="text/javascript" src="/{{=request.application}}/static/jquery/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/{{=request.application}}/static/jquery/jquery.slidertron-0.1.js"></script>
+
+<!--Meta & Semantic Section -->
+<meta name="layout" content="main"/> 
+<link rel="alternate" type="application/atom+xml" title="Gecho News" href="http://gecho.org/news/atom" /> 
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19593248-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>

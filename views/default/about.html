@@ -1,0 +1,91 @@
+{{extend 'layout.html'}}
+
+<!--{{if 'message' in globals():}}{{=H2(message)}}{{else:}}{{=BEAUTIFY(response._vars)}}{{pass}}-->
+
+<section class="promo"> 
+  <article> 
+    <h2>Nicholas David Preston, Ph.D.</h2>
+    <div class="photo-right"> 
+      <img src="/{{=request.application}}/static/images/preston_sm.jpg"
+           alt="bio pic" title="Nicholas Preston" height="240px" width="200" /> 
+      <div class="photo-right-credits"> 
+        <a href="http://www.flickr.com/photos/nicopresto//5155845059/">[Photo
+          credit - J.Skewes]</a> 
+      </div>  
+    </div>
+    <p>I am a postdoctoral scientist at the UW-Madison Center for
+      Sustainability and the Global Environment (SAGE). My research focuses on
+      the intersection of the environment, computing, and health.</p>
+    <br />
+  </article>
+  <article> 
+    <h3>Current Research Summary</h3>
+    <p>In 2009, I joined SAGE as the project director for
+      Healthscapes&#151;a suite of web tools for finding, analyzing, and
+      sharing global environmental health information. Our goal is to
+      initiate a community-driven open source project to facilitate research on the
+      environmental determinants of global health. Our research
+      is currently being applied to infectious disease outbreaks
+      and health monitoring during natural disasters. Healthsacpes is 
+      in an early release for developers; we aim to extend a stable
+      release to the research community by summer 2011. For more information
+      please visit <a href="http://www.healthscapes.org">healthscapes.org</a>
+      <br />
+  </article>
+
+  <article>
+    <h3 id="undergrad" onclick="collapse('undergrad_inner');">{{=T("Undergraduate Studies (1997-2002)")}}</h3>
+    <div id="undergrad_inner" class="coll" style="display:none;">
+      <p>In 2002, I completed my B.Sc. in Biological Sciences at the University of
+        Guelph (Ontario, Canada). My undergraduate minor was in Mathematical
+        Sciences, a combination of statistics, mathematics, and computer
+        science.</p>
+      <p>During my undergraduate studies I  worked for
+        Dr. Tim Johnson a limnologist at the OMNR Wheatley Fisheries Station. I was primarily
+        charged with building a database of physical-chemical and
+        zooplankton data for Lake Erie. The challenges
+        synchronizing databases among the U.S. and Canadian agencies working
+        in Lake Erie, fueled my life-long interest in database driven web
+        design for science.</p>
+    </div>
+  </article>
+
+  <article>
+    <h3 id="guatemala" onclick="collapse('guatemala_inner');">{{=T("Work in Guatemala (2002-2004)")}}</h3>
+    <div id="guatemala_inner" class="coll" style="display:none;">
+      <p>In 2002, I was sent to Guatemala, as an intern, to
+        provide technical assistance to the Water Resource Manaagemnt
+        Masters Program at the University of San Carlos. Following my
+        internship, I established an NGO with Marvin Romero (of Solola,
+        Guatemala), to build low-cost waste-treatment plants in rural Mayan
+        villages. Our treatment systems were designed to mimic the natural
+        processes of wetlands and rivers. Consequently, in the interest of furthering my
+        understanding of these systems, I elected to pursue
+        graduate studies in aquatic science (limnology).</p>
+    </div>
+  </article>
+  <article>
+    <h3 id="madison" onclick="collapse('madison_inner');">{{=T("Graduate Studies (2004-2009)")}}</h3>
+    <div id="madison_inner" class="coll" style="display:none;">
+      
+      <p>In 2009, I completed my Ph.D. at the Center for Limnology (CFL),
+        UW-Madison (Wisconsin, USA). My research focused on external
+        influences on lakes. Specifically, the influence of forests and
+        the atmosphere on carbon cycling in lakes, and the influence
+        of climate variability on ice cover and zooplankton. During my tenure as a
+        graduate student, I also completed a certificate in Global Health. My motivation was to connect my understanding of
+        pristine lakes to global health issues realted to water
+        quality.</p> 
+      <p>During my graduate studies, I developed an interest
+        in the evolution of research toward data-intensive science. For instance, at the start of my
+        graduate career we visited the lakes every few hours to collect
+        measurements. By the end of my Ph.D., we had sensors and
+        cameras throughout the lakes. Given my background in
+        information management and scientific computing, I became
+        fascinated by the potential of big data and have made this a
+        central tenet of my current research. Similarly, in the wake
+        of concerns over transparency in science, I began studying
+        open source software development with an eye towards open science</p>
+    </div> 
+  </article>
+</section>

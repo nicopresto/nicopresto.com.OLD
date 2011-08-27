@@ -1,0 +1,173 @@
+<!DOCTYPE html> 
+
+<html>
+  <head>
+    <title>{{=response.title or request.application}}</title>
+    <!--    <title>Nicopresto: researcher</title>-->
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]--> 
+    <link rel="shortcut icon"
+	  href="{{=URL(request.application,'static','favicon.ico')}}" 
+	  type="image/vnd.microsoft.icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    {{#------  require CSS and JS files for this page (read info in base.css) ------}}
+    {{response.files.append(URL(request.application,'static','base.css'))}}
+    <!--< link rel="stylesheet" href="/css/main.css" /> -->
+    <!--<link rel="stylesheet" href="/css/grails-html5.css" /> -->
+    <!--<link href="/{{=request.application}}/static/default.css" rel="stylesheet" type="text/css" />-->
+    <!--<link href="/{{=request.application}}/static/gallery.css" rel="stylesheet" type="text/css" />-->
+
+
+    {{#----Scripts----}}
+    {{response.files.append(URL(request.application,'static','superfish.js'))}}
+    {{#------ include web2py specific js code (jquery, calendar, form stuff) ------}}
+    {{include 'web2py_ajax.html'}}
+    <script type="text/javascript" src="/{{=request.application}}/static/jquery/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/{{=request.application}}/static/jquery/jquery.slidertron-0.1.js"></script>
+
+    <!--Meta & Semantic Section -->
+    <meta name="layout" content="main"/> 
+    <link rel="alternate" type="application/atom+xml" title="Gecho News" href="http://gecho.org/news/atom" /> 
+    <meta name="layout" content="main"/>   
+    <meta name="keywords" content="science, global, ecology, computing, health, limnology, open source, GIS, web2py, html5, CSS3, mapreduce, nlp, sahana, noaa, nosql, Nico Preston, Jonathan Patz, Mutlu Ozdogan, Nicholas Preston, UW-Madison"/>
+    <meta name="description" content="Nico Preston is a global environmental health researcher at UW-Madison."/>
+    
+    <!--g:javascript library="application" /--> 
+    <script type="text/javascript"> 
+      <!--add analytics here-->
+    </script> 
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <div id="logo">
+          <h1><a href="#">nicopresto</a></h1>
+          <h2><a href="http://www.gecho.org">Environment - Computing - Health</a></h2>
+        </div>
+        <!-- end div#logo -->
+        <div id="menu">
+          <ul>
+            <li class="active"><a href="#">Homepage</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">CV</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </div>
+        <!-- end div#menu -->
+      </div>
+      <div>
+        <div id="page">
+          <div id="page-bgtop">
+            <div id="content">
+              
+              <div class="post">
+                <div class="post-bgtop">
+                  <div class="post-bgbtm">
+                    <h2 class="title"><a href="#">Welcome back</a></h2>
+                    <p class="byline">Posted by <a href="#">nicopresto</a> April 22, 2010</p>
+                    <div class="entry">
+                      <p>This is the homepage for <strong>Nicholas Preston</strong>. Thanks for checking out the new design. The layout was inspired by a talk by Tim at Strange Loop 2010. By using a CSS free template I'm able to focus on the content and coding.</p>
+                    </div>
+                    <div class="meta">
+                      <p><a href="#" class="more">View More</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="post">
+                <div class="post-bgtop">
+                  <div class="post-bgbtm">
+                    <h2 class="title"><a href="#">Lorem Ipsum Dolor Volutpat</a></h2>
+                    <p class="byline">Posted by <a href="#">Someone</a> April 22, 2010</p>
+                    <div class="entry">
+                      <p>Curabitur tellus. Phasellus tellus turpis, iaculis in, faucibus lobortis, posuere in, lorem. Donec a ante. Donec neque purus, adipiscing id, eleifend a, cursus vel, odio. Vivamus varius justo sit amet leo. Morbi sed libero. Vestibulum blandit augue at mi. Praesent fermentum lectus eget diam. Nam cursus, orci sit amet porttitor iaculis, ipsum massa aliquet nulla, non elementum mi elit a mauris. Praesent fermentum lectus eget diam. Nam cursus, orci sit amet porttitor iaculis, ipsum massa aliquet nulla, non elementum mi elit a mauris. Curabitur tellus. Phasellus tellus turpis, iaculis in, faucibus lobortis, posuere in, lorem. Donec a ante. Donec neque purus, adipiscing cursus vel, odio.</p>
+                    </div>
+                    <div class="meta">
+                      <p><a href="#" class="more">View More</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end div#content -->
+            <div id="sidebar">
+              <div id="sidebar-bgtop">
+                <div id="sidebar-bgbtm">
+                  <ul>
+                    <li id="search">
+                      <h2>Search</h2>
+                      <form method="get" action="">
+                        <fieldset>
+                          <input type="text" id="seach-text" name="s" value="" />
+                          <input type="submit" id="search-submit" value="Search" />
+                        </fieldset>
+                      </form>
+                    </li>
+                    <li>
+                      <h2>Lorem Ipsum</h2>
+                      <ul>
+                        <li><a href="#">Fusce dui neque fringilla</a></li>
+                        <li><a href="#">Eget tempor eget nonummy</a></li>
+                        <li><a href="#">Magna lacus bibendum mauris</a></li>
+                        <li><a href="#">Nec metus sed donec</a></li>
+                        <li><a href="#">Magna lacus bibendum mauris</a></li>
+                        <li><a href="#">Velit semper nisi molestie</a></li>
+                        <li><a href="#">Eget tempor eget nonummy</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h2>Volutpat Dolore</h2>
+                      <ul>
+                        <li><a href="#">Nec metus sed donec</a></li>
+                        <li><a href="#">Magna lacus bibendum mauris</a></li>
+                        <li><a href="#">Velit semper nisi molestie</a></li>
+                        <li><a href="#">Eget tempor eget nonummy</a></li>
+                        <li><a href="#">Nec metus sed donec</a></li>
+                        <li><a href="#">Magna lacus bibendum mauris</a></li>
+                        <li><a href="#">Velit semper nisi molestie</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h2>Bebindum Mauris </h2>
+                      <ul>
+                        <li><a href="#">Nec metus sed donec</a></li>
+                        <li><a href="#">Magna lacus bibendum mauris</a></li>
+                        <li><a href="#">Velit semper nisi molestie</a></li>
+                        <li><a href="#">Eget tempor eget nonummy</a></li>
+                        <li><a href="#">Nec metus sed donec</a></li>
+                        <li><a href="#">Velit semper nisi molestie</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h2>Phasellus Tellus</h2>
+                      <ul>
+                        <li><a href="#">Eget tempor eget nonummy</a></li>
+                        <li><a href="#">Nec metus sed donec</a></li>
+                        <li><a href="#">Magna lacus bibendum mauris</a></li>
+                        <li><a href="#">Velit semper nisi molestie</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end div#sidebar -->
+            <div style="clear: both; height: 1px"></div>
+          </div>
+        </div>
+        <!-- end div#page -->
+      </div>
+      <!-- end div#wrapper -->
+      <div id="footer-wrapper">
+        <div id="footer">
+          <p id="legal">Copyright &copy; 2007 Vertebrate . All Rights Reserved. Designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+          <p id="links"><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+        </div>
+      </div>
+      <!-- end div#footer -->
+  </body>
+</html>

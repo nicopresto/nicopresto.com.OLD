@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    {{include 'head.html'}}
+  </head>
+
+  <body>
+    <div class="flash">{{=response.flash or ''}}</div>
+    <header>
+      {{include 'header.html'}}
+    </header> 
+
+    <div id="wrapper">
+      <div id="page"> 
+        <div id="content"> 
+          {{include}}
+        </div>
+
+        <section id="sidebar"> 
+          {{if request.function == 'cv':}}
+          {{include 'sidebar_cv.html'}}
+          {{elif request.function == 'about':}}
+          {{include 'sidebar_about.html'}}
+          {{else:}}
+          {{include 'sidebar_home.html'}}
+          {{pass}}
+        </section>
+
+        <br style="clear: both;" />      
+        <br style="clear: both;" /> 
+
+    </div></div>  <!-- end page & wrapper --> 
+
+    <!--    <footer class="ez-box">-->
+    <footer>
+      {{include 'footer.html'}}
+    </footer> 
+  </body>
+</html>

@@ -1,0 +1,214 @@
+{{extend 'layout.html'}}
+
+<!--{{if 'message' in globals():}}{{=H2(message)}}{{else:}}{{=BEAUTIFY(response._vars)}}{{pass}}-->
+
+<section class="promo"> 
+  <article>
+    <h2>Research Goals</h2> 
+    <p> 
+      I am interested in global health from an ecosystem perspective. I see
+      scientific computing and information management as powerful tools for
+      identifying and monitoring complex relationships between ecology and
+      health. Ultimately, this approach can help guide adaptive field
+      programs and interventions to reduce the global burden of disease.
+    </p>
+    <hr />
+  </article> 
+
+  <article>
+    <h2>Publications</h2>
+    <p>
+      {{for pub in pubs:}}
+      {{=pub.title}}: {{=pub.year}}<br />
+      {{pass}}
+    </p>
+  </article>
+
+  <article>
+    <h2>Education</h2>
+
+    <p>
+      {{for ed in education:}}
+      {{=ed.degree}}: {{=ed.year}}<br />
+      {{pass}}
+    </p>
+
+    <ul>
+      <li>Ph.D. (2009) • Center for Limnology • University of Wisconsin, Madison • U.S.A
+        External drivers of lakes in forested watersheds: Aeolian organic carbon inputs and ice phenology.</li>
+      <li>Certificate in Global Health (2009) • University of Wisconsin, Madison • U.S.A.
+        Courses in epidemiology, international health systems, and health fieldwork in Autlan, Mexico.</li>
+      <li>B.Sc. (Honours) (2002) • With Distinction • University of
+        Guelph • Ontario, Canada
+        <ul>
+          <li>Major: Biological Science (Dean’s list all semesters) </li>
+          <li>Minor: Mathematical Sciences (Statistics, Mathematics, and
+            Computer Science) </li>
+        </ul>
+      <li>International Studies (2000) • Université de Joseph Fourier • Grenoble, France
+        Awarded: Ontario-Rhone-Alps Bursary (1999-2000)</li>
+    </ul>
+
+  </article>
+
+  <article>
+    <h2>Publications</h2>
+    <ul>
+      <li>
+        Preston, ND, SR Carpenter, JJ Cole, and ML Pace. 2008. Airborne carbon deposition on a remote forested lake. Aquatic Sciences. Aquatic Sciences 70(3): 213-224.
+      </li>
+      <li>
+        Solomon, CT, JJ Cole, RR Doucett, ML Pace, ND Preston, LE Smith, and BC Weidel. In review. The influence of dietary water on the hydrogen stable isotope ratio in aquatic consumers. Oecologia.
+      </li>
+      <li>
+        Biggs, R., MW Diebel, D Gilroy, AM Kamarainen, MS Kornis, ND Preston,
+        JE Schmitz, CK Uejio, MC Van De Bogert, BC Weidel, PC West, DPM Zaks,
+        and SR Carpenter. In press. Preparing for the future:  Teaching
+        scenario planning at the graduate level. Frontiers in Ecology and the
+        Environment.
+      </li>
+      <li>
+        Pace, ML, SR Carpenter, JJ Cole, JJ Coloso, JF Kitchell, JR Hodgson, JJ Middelburg, ND Preston, CT Solomon, and BC Weidel. 2007. Does terrestrial organic carbon subsidize the planktonic food web in a clear-water lake? Limnology and Oceanography 52(5): 2177- 2189.
+      </li>
+      <li>
+        Cassinath N, Ernesto Garcia R, Vargas MH, Bethune D, McCullough J, Wilson M, Lorne J, and ND Preston. 2004. Working Together: Field guide to community participation in water projects/Trabjando Juntos: Manual de campo para trabajo comunitario en proyectos de agua www.caragua.org/docs/Final_Manual.pdf Non- peer reviewed.
+      </li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>presentations</h2>
+    <ul>
+      <li>Preston, ND, SR Carpenter, and LJ Kohler. 2008. Terrestrial support of lakes across the landscape. Ecological Society of America (ESA), Milwaukee, WI.</li>
+      <li>Preston, ND, SR Carpenter, JJ Cole, and ML Pace. 2007.  Driving allochthony: the rain of carbon and airborne deposition on lakes.  Advancing the Science of Limnology and Oceanography (ASLO), Santa Fe, NM.</li>
+      <li>Preston, ND, and JA Rusak. 2006.  Climate-Driven Changes in Spring Conditions: the influence of ice cover on spring zooplankton abundance. Advancing the Science of Limnology and Oceanography (ASLO), Victoria, BC.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>Research experience</h2>
+    <ul>
+      <li>UW-madison Cascade field program, University of Notre dame environmental research center— 2005-2008</li>
+      <li>Principal Investigators: Carpenter SR, JJ Cole, JF Kitchell, ML Pace, and JJ Hodgson.</li>
+      <li>Daily management of field operations for summer fieldwork. Hiring and supervising undergraduate researchers, data collection and management, biogeochemical laboratory methods, invertebrate population estimates, bathymetry, atmospheric sampling, and electrofishing.</li>
+      <li>laboratory culturing of zooplankton and algae, UW-madison — 2007/2008
+        Advisor: Dodson SI. Experimental design and setup of a laboratory to culture zooplankton and algae for research on deuterium isotopes and atmospheric particulates. Hiring and supervising lab technicians. </li>
+      <li>Water Resource Management Consultant, hydrobiotec — 2003/2004
+        Collaborator: Romero-Santizo M. Co-founded a non-profit (Hydrobiotec) to develop and design constructed wetlands for the treatment of municipal wastewater in Santa Cruz la Laguna (Solola, Guatemala), raised local funding and support for water treatment project, taught information management and experimental design to graduate students at the University of San Carlos in Guatemala City.</li>
+      <li>Water Resource Management Intern, Canadian Int’l Development Agency, University of Calgary and Universidad de San Carlos — 2003/2004 
+        Supervisors: Bethune D and J Chonay • Technical support to the University of San Carlos Water Resource Management Master’s program, contributed to a field manual on community participation, networked with the Guatemalan government, NGOs, and universities to coordinate the management, monitoring, and economic valuation of Lake Atitlan (Guatemalan highlands) </li>
+      <li>Database Developer, OMNR Wheatley fisheries research station and Bilateral Forage Task Group — 2001/2003
+        Supervisor: Johnson TB • Database design and development for long-term U.S./Canadian ecological data. Researched Honours Thesis “Impact of Zebra mussels on Lake Erie”, limnological fieldwork on research vessel (zooplankton, phytoplankton, water chemistry), electrofishing, and bottom trawling. Presented information management strategies to research agencies (Annual meeting of the Lake Erie Forage Task Group 2002)</li>
+      <li>Field assistant, universitÉ de joseph fourier High altitude bio lab — 2000
+        Supervisor: Pompanon F • Field and lab work on the spatial distribution of insects in relation to land-use, research protocol development (cartography, GIS, and GPS) </li>
+      <li>Field technician, university of guelph - Ontario Ministry of natural resources — 1998
+        Supervisor: Clément M and DLG Noakes • Field observations of salmonid behaviour, surveying optimal spawning sites, population estimates and electrofishing, hydrological surveying (water flow and riverbed sampling)</li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>FUnding:</h2>
+    <ul>
+      <li>Vilas Travel Grant (2008)</li>
+      <li>ASLO Student Grant (2007)</li>
+      <li>Anna Grant Birge Award (2006)</li>
+      <li>John Jefferson Davis Travel Award (2006)</li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>Recent Teaching Experience:</h2>
+    <ul>
+      <li>
+        Teaching Assistant - Limnology and Conservation of Aquatic Resources
+        (Zoology Lab 315)
+      </li>
+      <li>
+        Advised 4 undergraduate senior (honors) theses
+      </li>
+      <li>
+        Directly mentored 6 undergraduate students in field and laboratory
+        methods for limnology
+      </li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>Professional Societies</h2>
+    <ul>
+      <li>
+        • Advancing the Science of Limnology and Oceanography (ASLO)
+      </li>
+      <li>
+        • Ecological Society of America (ESA)
+      </li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>Referee for Professional Journals, Including:</h2>
+    <ul>
+      <li>ASLO</li>
+      <li>Ecological Applications</li>
+      <li>Hydrobiologia</li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>VOLUNTEER WORK </h2>
+    <ul>
+      <li>
+        Cascade Mountain National Ski Patrol — 2007-present
+      </li>
+      <li>
+        American Red Cross Disaster Action Team — 2007-present
+      </li>
+      <li>
+        23rd Company of Volunteer Fire and Rescue (Bomberos), Guatemala — 2003-2004
+      </li>
+      <li>
+        Canadian Cancer Society canvasser — 1990-1997
+      </li>
+      <li>
+        CFRU 93.3FM: host and producer of science and technology radio — 1997-1999
+      </li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>SKILLS</h2>
+    <ul>
+      <li>
+        Advanced mathematical modeling and computer programming (R and Python)
+      </li>
+      <li>
+        Web design and development (Django, Drupal, Dreamweaver, Flex, and Flash)
+      </li>
+      <li>
+        Database design and information management (SQL, MySQL, PostgreSQL, MS Access)
+      </li>
+      <li>
+        Audio/Video recording and editing (Adobe Premier and Soundbooth)
+      </li>
+      <li>
+        Scientific field research and social surveying
+      </li>
+      <li>
+        Outdoor Emergency Medic - experienced first responder
+      </li>
+      <li>
+        Disaster training - fire, flood, logistics, and shelter management
+      </li>
+      <li>
+        Multilingual: fluent in English, French and Spanish
+      </li>
+    </ul>
+  </article>
+
+  <article>
+    <p>Page 2 - CV - Nicholas D. Preston, Ph.D.
+      T 608-698-6425
+      F 608-265-4113</p>
+  </article>
+
+</section>

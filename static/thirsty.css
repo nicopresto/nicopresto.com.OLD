@@ -1,0 +1,421 @@
+/*******************************
+ ThirstyHead customization
+ This CSS originates from the
+ work of the web consultancy 
+ group thirstyhead.com
+ author: Scott Davis
+ email: scott@thirstyhead.com
+
+*******************************/
+.follow-us {
+  background: #FFF;
+  border-radius: 10px;
+  -moz-border-radius: 10px; 
+  -webkit-border-radius: 10px;
+  text-align: center;
+  line-height: 2em;
+  vertical-align: middle;
+  box-shadow:5px 5px 10px #000000;
+  -moz-box-shadow:5px 5px 10px #000000;
+  -webkit-box-shadow:5px 5px 10px #000000;
+}
+
+.follow-us a{
+  text-decoration: none;
+}
+
+.follow-us img{
+  padding: 1em 1em 0 1em;
+  border:none;
+/*  width: 40px;
+  height: 40px;*/ 
+}
+
+.about {
+  padding: 1.2em;
+  background: #FFF;
+  border-radius: 10px;
+  -moz-border-radius: 10px; 
+  -webkit-border-radius: 10px; 
+
+  box-shadow:5px 5px 10px #000000;
+  -moz-box-shadow:5px 5px 10px #000000;
+  -webkit-box-shadow:5px 5px 10px #000000;   
+}
+
+.about p h3{
+  padding-left: 2em;  
+}
+
+.about p{
+  padding-left: 2em;  
+}
+
+.about a{
+  text-decoration: none;
+}
+
+/*
+
+.about img{
+  padding: 1em 1em 0 1em;
+  border:none;
+  width: 40px;
+  height: 40px;
+}
+
+
+*/
+
+.bio img {
+  float: left;
+  display: inline;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  border-color: #514F42;
+  border-style: solid;
+   border-width: thin;
+  box-shadow:5px 5px 10px #000000;
+  -moz-box-shadow:5px 5px 10px #000000;
+  -webkit-box-shadow:5px 5px 10px #000000;   
+}
+
+
+.photo-right {
+  float: right;
+  display: inline;
+  margin-left: 10px;
+}
+
+.photo-right-image {
+  border-color: #514F42;
+  border-style: solid;
+   border-width: thin;
+
+  box-shadow:5px 5px 10px #000000;
+  -moz-box-shadow:5px 5px 10px #000000;
+  -webkit-box-shadow:5px 5px 10px #000000;
+}
+
+.photo-right-credits {
+  padding-top: 1.2em;
+  font-size: 0.75em;
+  text-align: right;
+  text-decoration: none;
+}
+
+.photo-right-credits img{
+  border:none;
+}
+
+.photo-right-credits a{
+  text-decoration: none;
+}
+
+.photo-left {
+  float: left;
+  display: inline;
+  margin-right: 10px;
+}
+
+.error {
+  clear: both;
+}
+
+.error-msg {
+  font-style: italic;
+  font-size: 2em;
+  color: #fff;
+  padding: 1em;
+  position: absolute;
+  float: left;
+  display: inline;
+  z-index: 2;
+}
+
+.video {
+  clear: both; 
+  padding: 1em; 
+}
+
+.video img {
+  float: left;
+  display: inline;
+  margin-right: 30px;  
+  margin-bottom: 8px;  
+  border-color: #514F42;
+  border-style: solid;
+  border-width: thin; 
+  box-shadow:5px 5px 10px #000000;
+  -moz-box-shadow:5px 5px 10px #000000;
+  -webkit-box-shadow:5px 5px 10px #000000;  
+}
+
+
+.video h2{
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.video p{
+  padding-top: 0em;
+  margin-top: 0em;
+}
+
+.video-date {
+  font-weight: bold;
+  font-style: italic;
+  padding-top: 0em;
+  margin-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
+
+.grailspodcast h1 {
+  font-size: 1.2em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.grailspodcast p{
+  padding-top: 0em;
+  margin-top: 0em;
+}
+
+.grailspodcast-logo {
+  width: 650px;
+}
+
+.grailspodcast-intro {
+  font-size: 1.2em;
+  padding-bottom: 1em;
+}
+
+.grailspodcast-intro img{
+  border:none;
+}
+
+
+.intro {
+  font-size: 1.2em;
+  padding-bottom: 1em;
+}
+
+.books {
+  clear: both; 
+  padding: 1em; 
+}
+
+.books img{
+  float: left;
+  display: inline;
+  margin-right: 30px;  
+  margin-bottom: 8px;  
+  border-color: #514F42;
+  border-style: solid;
+  border-width: thin; 
+  box-shadow:5px 5px 10px #000000;
+  -moz-box-shadow:5px 5px 10px #000000;
+  -webkit-box-shadow:5px 5px 10px #000000;  
+}
+
+.books h1 {
+  margin-top: 0em;
+}
+
+.books h2 {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.books p{
+  padding-top: 0em;
+  margin-top: 0em;
+}
+
+.ContentFlow {
+  padding: 1em;
+   background: #422C21;
+   border-radius: 10px;
+  -moz-border-radius: 10px; 
+  -webkit-border-radius: 10px;
+   box-shadow:5px 5px 10px #000000;
+  -moz-box-shadow:5px 5px 10px #000000;
+  -webkit-box-shadow:5px 5px 10px #000000;  
+  
+}
+
+.paginateButtons {
+  padding-top: 1em;
+  clear: both;
+}
+
+.articles h1 {
+  margin-top: 0em;
+}
+
+.articles h2 {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.articles p{
+  padding-top: 0em;
+  margin-top: 0em;
+  padding-left: 2em;
+}
+
+.article h2{
+  padding-top: 0em;
+  margin-top: 0em;
+}
+
+.article-date {
+  font-weight: bold;
+  font-style: italic;
+  padding-top: 1em;
+  margin-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
+
+.quote blockquote {
+   font-style: italic;
+  border-left: 2px dotted #525252;
+  padding-left: 1em;
+  margin-left: 2em;
+}
+
+
+.news h1{
+  margin-top: 5em;
+  margin-bottom: 0em;
+}
+
+.news h2{
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.news p{
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+  padding-left: 2em;
+}
+
+.news-date {
+  font-weight: bold;
+  font-style: italic;
+  padding-top: 1em;
+}
+
+.promo {
+  padding: 1.2em;
+  background: #FFF;
+  border-radius: 10px;
+  -moz-border-radius: 10px; 
+  -webkit-border-radius: 10px; 
+  box-shadow:5px 5px 10px #000000;
+  -moz-box-shadow:5px 5px 10px #000000;
+  -webkit-box-shadow:5px 5px 10px #000000;   
+}
+
+
+.promo p{
+  padding-left: 2em;  
+}
+
+
+.spikes h1 {
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.spikes h2 {
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.spikes p{
+  padding-top: 0em;
+  margin-top: 0em;
+  padding-left: 2em;
+}
+
+.spikes div{
+  padding-top: 0em;
+  margin-top: 0em;
+  padding-left: 30px;
+}
+
+.spikes table{
+  border: 0px;
+  border-collapse:collapse;
+}
+
+.spikes td{
+  border: 0px;
+  vertical-align: top;
+  padding: 1em;
+}
+
+.spikes tr{
+/*  border-color: #514F42;
+  border-style: solid;
+  border-width: thin; 
+  border-bottom: 1px solid #514F42;
+  border-top: 1px solid #514F42;
+*/  
+}
+
+.spikes tr:nth-child(even) {
+  background-color: #ccc;
+}
+
+.spike-title {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.courses h1 {
+  padding-top: 3em;
+}
+
+.courses p{
+  padding-top: 0em;
+  margin-top: 0em;
+  padding-left: 2em;
+}
+
+.courses table{
+  border: 0px;
+  border-collapse:collapse;
+}
+
+.courses td{
+  border: 0px;
+  vertical-align: top;
+  padding: 1em;
+}
+
+.courses tr{
+/*  border-color: #514F42;
+  border-style: solid;
+  border-width: thin; 
+  border-bottom: 1px solid #514F42;
+  border-top: 1px solid #514F42;
+*/  
+}
+
+.courses tr:nth-child(even) {
+  background-color: #ccc;
+}
+
+.course-title {
+  font-weight: bold;
+  font-style: italic;
+}
